@@ -1,0 +1,13 @@
+{
+  "name": "wriox-website",
+  "version": "1.0.0",
+  "description": "WRIOX — Technology that understands people",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l 8080 .",
+    "dev": "npx serve -l 8080 ."
+  },
+  "keywords": [],
+  "author": "WRIOX",
+  "license": "ISC"
+}

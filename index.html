@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>WRIOX — Technology that understands people</title>
+  <meta name="description" content="WRIOX is an independent technology and design studio building human-first websites, brand identities and digital products.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- SITE HEADER -->
+  <header class="site-header" id="header">
+    <div class="wrap nav-wrap">
+      <a class="brand-link" href="#home" aria-label="WRIOX home">
+        <img src="assets/wriox-wordmark.png" alt="WRIOX" class="brand-wordmark" width="136" height="28">
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+        <span class="menu-icon"></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#home" aria-current="page">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#career">Career</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#contact" class="nav-action-btn">Start a project <span class="nav-arrow">→</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="wrap">
+        <div class="hero-grid">
+          <!-- Hero Text -->
+          <div class="hero-content">
+            <div class="eyebrow-badge">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              <span class="eyebrow-text">BUILT FOR PEOPLE • DRIVEN BY TECHNOLOGY</span>
+            </div>
+            <h1 class="hero-title">
+              Technology that<br>
+              understands<br>
+              people <span class="gradient-text">first.</span>
+            </h1>
+            <p class="hero-lead">
+              WRIOX is an IT company that designs and builds websites, brands and digital experiences around how people actually live and work, so the result feels natural from the first click.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contact">
+                <span>Start a project</span>
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+              <a class="btn btn-secondary" href="#services">
+                <span>See what we make</span>
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Visual: Floating 3D WRIOX Symbol -->
+          <div class="hero-visual" id="hero-visual">
+            <div class="hero-ambient-glow" aria-hidden="true"></div>
+            <div class="logo-floating-stage" id="logo-floating-stage">
+              <div class="logo-float-animator">
+                <div class="logo-interactive-tilt" id="logo-interactive-tilt">
+                  <img
+                    src="assets/wriox-hero-3d-symbol.png"
+                    alt="WRIOX 3D Logo Symbol"
+                    class="hero-floating-logo-img"
+                    width="972"
+                    height="427"
+                    fetchpriority="high"
+                  >
+                </div>
+              </div>
+              <div class="logo-contact-shadow" id="logo-contact-shadow" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="editorial-section" id="about">
+      <div class="wrap">
+        <!-- Section Header -->
+        <div class="section-header-editorial">
+          <div class="section-label">
+            <span class="label-number">01</span>
+            <span class="label-title">ABOUT WRIOX</span>
+          </div>
+          <div class="section-header-content">
+            <h2 class="section-headline">
+              Technology adapts to people — <span class="gradient-text">not the other way around.</span>
+            </h2>
+            <p class="section-lead">
+              At WRIOX, we build human-first systems where technology adapts to the user, not the other way around. Our work turns real-world complexity into digital experiences that feel natural, purposeful and effortless.
+            </p>
+          </div>
+        </div>
+
+        <!-- Who / What / How Pillars -->
+        <div class="about-pillars-grid">
+          <div class="about-pillar-card">
+            <div class="pillar-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+            </div>
+            <span class="pillar-eyebrow">WHO WE ARE</span>
+            <h3 class="pillar-title">Independent Studio</h3>
+            <p class="pillar-text">An independent IT and design studio crafting bespoke technology systems with care and intentionality.</p>
+          </div>
+
+          <div class="about-pillar-card">
+            <div class="pillar-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="m21.12 6.4-6.05-4.06a2 2 0 0 0-2.17-.05L2.9 6.27a2 2 0 0 0-1 1.73v7.94a2 2 0 0 0 .95 1.71l6.1 4.13a2 2 0 0 0 2.18.05l9.94-6.49A2 2 0 0 0 22 13.6V8.12a2 2 0 0 0-.88-1.72Z"/>
+                <path d="m12 22 9.5-6.2"/>
+                <path d="M12 22V12"/>
+                <path d="M2.5 8 12 12l9.5-4"/>
+              </svg>
+            </div>
+            <span class="pillar-eyebrow">WHAT WE MAKE</span>
+            <h3 class="pillar-title">Digital Products & Brands</h3>
+            <p class="pillar-text">High-performance websites, cohesive brand identities, and software interfaces engineered for real people.</p>
+          </div>
+
+          <div class="about-pillar-card">
+            <div class="pillar-icon-box" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z"/>
+                <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"/>
+                <path d="M12 2v2"/>
+                <path d="M12 20v2"/>
+                <path d="m4.93 4.93 1.41 1.41"/>
+                <path d="m17.66 17.66 1.41 1.41"/>
+                <path d="M2 12h2"/>
+                <path d="M20 12h2"/>
+                <path d="m6.34 17.66-1.41 1.41"/>
+                <path d="m19.07 4.93-1.41 1.41"/>
+              </svg>
+            </div>
+            <span class="pillar-eyebrow">HOW WE WORK</span>
+            <h3 class="pillar-title">Handcrafted Craft</h3>
+            <p class="pillar-text">Plain language, honest timelines, transparent collaboration, and results that never rely on generic templates.</p>
+          </div>
+        </div>
+
+        <!-- Editorial Principles Rows -->
+        <div class="principles-editorial-block">
+          <div class="block-heading-row">
+            <span class="block-eyebrow">CORE PRINCIPLES</span>
+            <span class="block-caption">How we make decisions across every project</span>
+          </div>
+
+          <div class="principles-list">
+            <div class="principle-row">
+              <span class="principle-num">01</span>
+              <div class="principle-info">
+                <h4 class="principle-title">Human First Architecture</h4>
+                <p class="principle-desc">Technology engineered around real human behavior, daily workflows and the way people naturally think — not around the way software is usually organized.</p>
+              </div>
+              <span class="principle-arrow" aria-hidden="true">→</span>
+            </div>
+
+            <div class="principle-row">
+              <span class="principle-num">02</span>
+              <div class="principle-info">
+                <h4 class="principle-title">Radical Simplicity</h4>
+                <p class="principle-desc">We transform dense, complicated operations into clear, intuitive interactions. If an interface requires a lengthy instruction manual, we keep refining it.</p>
+              </div>
+              <span class="principle-arrow" aria-hidden="true">→</span>
+            </div>
+
+            <div class="principle-row">
+              <span class="principle-num">03</span>
+              <div class="principle-info">
+                <h4 class="principle-title">Purposeful Impact</h4>
+                <p class="principle-desc">Tools must do more than just complete a transaction. They must solve real problems, feel delightful to use, and leave the person feeling capable and empowered.</p>
+              </div>
+              <span class="principle-arrow" aria-hidden="true">→</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vision & Mission Two-Column Split -->
+        <div class="vision-mission-split">
+          <div class="vm-col">
+            <span class="vm-tag">OUR VISION</span>
+            <h3 class="vm-heading">
+              A future where technology understands people <span class="gradient-text">before people have to understand technology.</span>
+            </h3>
+            <p class="vm-desc">We envision a world where digital tools are so seamlessly aligned with human intuition that technology fades into the background, leaving only capability and clarity.</p>
+          </div>
+
+          <div class="vm-col">
+            <span class="vm-tag">OUR MISSION</span>
+            <h3 class="vm-heading">
+              We create technology from the way people <span class="gradient-text">actually live, work, and think.</span>
+            </h3>
+            <p class="vm-desc">Turning real-world complexity into digital experiences that feel natural, purposeful, and possible — built with handcrafted care and lasting technical integrity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="editorial-section section-light" id="services">
+      <div class="wrap">
+        <div class="section-header-editorial">
+          <div class="section-label">
+            <span class="label-number">02</span>
+            <span class="label-title">WHAT WE DO</span>
+          </div>
+          <div class="section-header-content">
+            <h2 class="section-headline">
+              Services
+            </h2>
+            <p class="section-lead">
+              Four things we do well today. More will follow as the studio grows.
+            </p>
+          </div>
+        </div>
+
+        <!-- Editorial Services Directory Table (The 4 Core Services) -->
+        <div class="services-directory">
+          <!-- 01 Personal portfolio -->
+          <div class="service-row">
+            <div class="service-meta">
+              <span class="service-num">01</span>
+              <span class="service-tag">PORTFOLIO</span>
+            </div>
+            <div class="service-main">
+              <h3 class="service-title">Personal portfolio</h3>
+              <p class="service-desc">A site that presents you the way a good introduction would.</p>
+              <ul class="service-features">
+                <li>Your work, story and skills in a clear order</li>
+                <li>Fast on phones, easy to update</li>
+                <li>Built to be found and remembered</li>
+              </ul>
+            </div>
+            <div class="service-action">
+              <a href="#contact" class="service-link" aria-label="Inquire about Personal portfolio">
+                <span>Start project</span>
+                <span class="row-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 02 Landing page -->
+          <div class="service-row">
+            <div class="service-meta">
+              <span class="service-num">02</span>
+              <span class="service-tag">LANDING PAGE</span>
+            </div>
+            <div class="service-main">
+              <h3 class="service-title">Landing page</h3>
+              <p class="service-desc">One focused page that turns a visitor into an enquiry or a sale.</p>
+              <ul class="service-features">
+                <li>Message, layout and call to action planned together</li>
+                <li>Clean code and quick loading</li>
+                <li>Ready for campaigns and ads</li>
+              </ul>
+            </div>
+            <div class="service-action">
+              <a href="#contact" class="service-link" aria-label="Inquire about Landing page">
+                <span>Start project</span>
+                <span class="row-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 03 Personal branding -->
+          <div class="service-row">
+            <div class="service-meta">
+              <span class="service-num">03</span>
+              <span class="service-tag">BRANDING</span>
+            </div>
+            <div class="service-main">
+              <h3 class="service-title">Personal branding</h3>
+              <p class="service-desc">Logo and graphic design that gives you a consistent, recognizable look.</p>
+              <ul class="service-features">
+                <li>Logo design and colour direction</li>
+                <li>Social and print graphics</li>
+                <li>A simple guide so everything matches</li>
+              </ul>
+            </div>
+            <div class="service-action">
+              <a href="#contact" class="service-link" aria-label="Inquire about Personal branding">
+                <span>Start project</span>
+                <span class="row-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 04 Digital marketing -->
+          <div class="service-row">
+            <div class="service-meta">
+              <span class="service-num">04</span>
+              <span class="service-tag">MARKETING</span>
+            </div>
+            <div class="service-main">
+              <h3 class="service-title">Digital marketing</h3>
+              <p class="service-desc">Getting the right people to notice what you have made.</p>
+              <ul class="service-features">
+                <li>SEO so search engines understand your site</li>
+                <li>Video editing for short, clear stories</li>
+                <li>Content writing in a natural voice</li>
+                <li>Google Ads set up, run and reviewed</li>
+              </ul>
+            </div>
+            <div class="service-action">
+              <a href="#contact" class="service-link" aria-label="Inquire about Digital marketing">
+                <span>Start project</span>
+                <span class="row-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="services-footer-note">
+          <p>Pricing is tailored to each project. Tell us what you need and we will reply with a clear quote.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS / WHAT WE BUILD SECTION -->
+    <section class="editorial-section" id="products">
+      <div class="wrap">
+        <div class="section-header-editorial">
+          <div class="section-label">
+            <span class="label-number">03</span>
+            <span class="label-title">WHAT WE BUILD</span>
+          </div>
+          <div class="section-header-content">
+            <h2 class="section-headline">
+              Selected technical architectures and <span class="gradient-text">digital platforms.</span>
+            </h2>
+            <p class="section-lead">
+              A preview of our engineering standards, component architectures, and human-centered design capabilities.
+            </p>
+          </div>
+        </div>
+
+        <!-- Authentic Products Section (No fabricated projects) -->
+        <div class="products-upcoming-box">
+          <div class="upcoming-badge">
+            <span class="upcoming-dot" aria-hidden="true"></span>
+            <span class="upcoming-badge-text">IN ACTIVE DEVELOPMENT</span>
+          </div>
+          <h3 class="upcoming-title">Our first public product showcase is on the way.</h3>
+          <p class="upcoming-desc">
+            We are engineering a curated collection of standalone tools, demo platforms, and digital systems. Live demos and interactive case studies will be released directly on this page soon.
+          </p>
+          <div class="upcoming-action">
+            <a href="#contact" class="btn btn-secondary">
+              <span>Discuss a custom project or tool</span>
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREER SECTION -->
+    <section class="editorial-section section-light" id="career">
+      <div class="wrap">
+        <div class="section-header-editorial">
+          <div class="section-label">
+            <span class="label-number">04</span>
+            <span class="label-title">CAREER</span>
+          </div>
+          <div class="section-header-content">
+            <h2 class="section-headline">
+              BUILD WHAT <span class="gradient-text">MATTERS.</span>
+            </h2>
+            <p class="section-lead">
+              We are looking for thoughtful people who care about solving real problems, learning continuously, and building technology with lasting purpose.
+            </p>
+          </div>
+        </div>
+
+        <!-- Why WRIOX Pillars -->
+        <div class="career-values-grid">
+          <div class="value-item">
+            <span class="value-num">01</span>
+            <h4 class="value-title">Autonomy & Craft</h4>
+            <p class="value-desc">We prioritize high-craft execution, independent thinking, and pride in detail over layers of corporate bureaucracy.</p>
+          </div>
+          <div class="value-item">
+            <span class="value-num">02</span>
+            <h4 class="value-title">Human-First Problem Solving</h4>
+            <p class="value-desc">Every system we build is designed directly from how real people think and work, solving real-world friction.</p>
+          </div>
+          <div class="value-item">
+            <span class="value-num">03</span>
+            <h4 class="value-title">Thoughtful Cadence</h4>
+            <p class="value-desc">Sustainable timelines, honest communication, and an unwavering focus on durable excellence over rushed gimmicks.</p>
+          </div>
+        </div>
+
+        <!-- Open Inquiries List -->
+        <div class="career-openings-block">
+          <div class="block-heading-row">
+            <span class="block-eyebrow">COLLABORATION OPPORTUNITIES</span>
+            <span class="block-caption">We review every introduction with genuine interest</span>
+          </div>
+
+          <div class="roles-list">
+            <div class="role-row">
+              <div class="role-primary">
+                <h4 class="role-title">Frontend & Web Engineer</h4>
+                <span class="role-desc">HTML/CSS craftsmanship, modern JS, performance optimization & responsive systems</span>
+              </div>
+              <div class="role-meta">
+                <span class="meta-tag">Remote / Hybrid</span>
+                <span class="meta-tag">Full-time / Project</span>
+              </div>
+              <a href="mailto:contact@wriox.com?subject=Frontend%20Engineer%20Introduction" class="role-apply-link">
+                <span>Introduce yourself</span>
+                <span class="role-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+
+            <div class="role-row">
+              <div class="role-primary">
+                <h4 class="role-title">Brand & UI Designer</h4>
+                <span class="role-desc">Editorial visual design, design systems, typographic hierarchy & brand storytelling</span>
+              </div>
+              <div class="role-meta">
+                <span class="meta-tag">Remote / Hybrid</span>
+                <span class="meta-tag">Full-time / Project</span>
+              </div>
+              <a href="mailto:contact@wriox.com?subject=Brand%20Designer%20Introduction" class="role-apply-link">
+                <span>Introduce yourself</span>
+                <span class="role-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+
+            <div class="role-row">
+              <div class="role-primary">
+                <h4 class="role-title">Technical Writer & Digital Strategist</h4>
+                <span class="role-desc">Plain-language documentation, user journey architecture & digital campaign strategy</span>
+              </div>
+              <div class="role-meta">
+                <span class="meta-tag">Remote / Hybrid</span>
+                <span class="meta-tag">Contract / Project</span>
+              </div>
+              <a href="mailto:contact@wriox.com?subject=Strategist%20Introduction" class="role-apply-link">
+                <span>Introduce yourself</span>
+                <span class="role-arrow" aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="career-cta-box">
+            <div class="career-cta-text">
+              <h4>Don't see your exact role?</h4>
+              <p>We are always glad to connect with designers, engineers, writers and strategists who care about craft.</p>
+            </div>
+            <a href="mailto:contact@wriox.com?subject=General%20Introduction%20to%20WRIOX" class="btn btn-secondary btn-sm">
+              <span>Send your portfolio to contact@wriox.com</span>
+              <span class="btn-arrow" aria-hidden="true">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="editorial-section contact-section" id="contact">
+      <div class="contact-ambient-glow" aria-hidden="true"></div>
+
+      <!-- Subtle decorative orbit path in background -->
+      <div class="contact-orbit-deco" aria-hidden="true">
+        <svg viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg" class="contact-orbit-svg" preserveAspectRatio="none">
+          <path d="M-50,220 C200,420 500,520 700,320 C900,120 1150,260 1250,300" stroke="url(#contact-orbit-grad)" stroke-width="1.5" stroke-dasharray="4 6" opacity="0.45" />
+          <path d="M-80,260 C220,490 560,560 760,340 C960,120 1180,220 1280,250" stroke="url(#contact-orbit-grad2)" stroke-width="1" opacity="0.3" />
+          <defs>
+            <linearGradient id="contact-orbit-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#5B2CFF" stop-opacity="0.6"/>
+              <stop offset="50%" stop-color="#2867FF" stop-opacity="0.4"/>
+              <stop offset="100%" stop-color="#18C7E8" stop-opacity="0.6"/>
+            </linearGradient>
+            <linearGradient id="contact-orbit-grad2" x1="0%" y1="100%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#18C7E8" stop-opacity="0.4"/>
+              <stop offset="60%" stop-color="#5B2CFF" stop-opacity="0.3"/>
+              <stop offset="100%" stop-color="#2867FF" stop-opacity="0.5"/>
+            </linearGradient>
+          </defs>
+        </svg>
+        <div class="contact-planet-node node-1"></div>
+        <div class="contact-planet-node node-2"></div>
+      </div>
+
+      <div class="wrap">
+        <div class="contact-grid">
+          <!-- LEFT COLUMN -->
+          <div class="contact-left">
+            <div class="contact-eyebrow-wrap">
+              <span class="contact-eyebrow">START A CONVERSATION</span>
+              <span class="contact-eyebrow-line" aria-hidden="true">
+                <span class="contact-eyebrow-dot"></span>
+              </span>
+            </div>
+
+            <h2 class="contact-title">
+              Have something<br>
+              worth <span class="contact-gradient-text">building?</span>
+            </h2>
+
+            <p class="contact-desc">Let's turn your idea into something people actually want to use.</p>
+
+            <div class="contact-channels">
+              <a href="mailto:contact@wriox.com" class="contact-channel-link">
+                <span class="channel-icon mail-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect width="20" height="16" x="2" y="4" rx="2"/>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                  </svg>
+                </span>
+                <span class="channel-text">contact@wriox.com</span>
+                <span class="channel-arrow" aria-hidden="true">↗</span>
+              </a>
+
+              <a href="https://linkedin.com/company/wriox" target="_blank" rel="noopener" class="contact-channel-link">
+                <span class="channel-icon linkedin-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76c.97 0 1.76-.79 1.76-1.76a1.76 1.76 0 0 0-3.52 0c0 .97.79 1.76 1.76 1.76m-1.4 9.74h2.79v-8.37H5.06v8.37Z"/>
+                  </svg>
+                </span>
+                <span class="channel-text">linkedin.com/company/wriox</span>
+                <span class="channel-arrow" aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+            <div class="contact-footer-tags">
+              <span class="contact-tag-bar" aria-hidden="true"></span>
+              <p class="contact-tags-text">IDEAS <span>/</span> PRODUCTS <span>/</span> PLATFORMS <span>/</span> REAL IMPACT</p>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN (FORM) -->
+          <div class="contact-right">
+            <form id="f" class="contact-form" novalidate>
+              <div class="field-group">
+                <label for="c-name" class="field-label">YOUR NAME</label>
+                <div class="field-control">
+                  <input id="c-name" name="n" type="text" placeholder="Enter your name" required autocomplete="name">
+                  <span class="field-line" aria-hidden="true"></span>
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label for="c-email" class="field-label">WORK EMAIL</label>
+                <div class="field-control">
+                  <input id="c-email" name="e" type="email" placeholder="Enter your work email" required autocomplete="email">
+                  <span class="field-line" aria-hidden="true"></span>
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label for="c-type" class="field-label">WHAT ARE YOU BUILDING?</label>
+                <div class="field-control">
+                  <input id="c-type" name="project_type" type="text" placeholder="e.g. Website, Product, Platform, Idea, etc.">
+                  <span class="field-line" aria-hidden="true"></span>
+                </div>
+              </div>
+
+              <div class="field-group">
+                <label for="c-msg" class="field-label">MESSAGE</label>
+                <div class="field-control">
+                  <textarea id="c-msg" name="m" rows="3" placeholder="Tell us about your project, goals or any specific requirements..." required></textarea>
+                  <span class="field-line" aria-hidden="true"></span>
+                </div>
+              </div>
+
+              <button class="contact-submit-btn" type="submit">
+                <span>Start a conversation</span>
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </button>
+
+              <p class="msg" id="msg" role="status"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-main-grid">
+        <div class="footer-brand-col">
+          <a href="#home" class="footer-brand-link" aria-label="WRIOX home">
+            <img src="assets/wriox-logo-full.png" alt="WRIOX" class="footer-logo-img" width="180" height="130">
+          </a>
+          <p class="footer-statement">Technology that understands people first.</p>
+          <p class="footer-subtext">Handcrafted web architectures, design systems, and digital experiences shaped around real human behavior.</p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-heading">Navigation</h4>
+          <ul class="footer-link-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#career">Career</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-heading">Capabilities</h4>
+          <ul class="footer-link-list">
+            <li><a href="#services">Websites & Portfolios</a></li>
+            <li><a href="#services">Digital Products</a></li>
+            <li><a href="#services">Brand Identity</a></li>
+            <li><a href="#services">UX Strategy</a></li>
+            <li><a href="#services">Custom Technology</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-col-heading">Connect</h4>
+          <ul class="footer-link-list">
+            <li><a href="mailto:contact@wriox.com">contact@wriox.com</a></li>
+            <li><a href="https://linkedin.com/company/wriox" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+            <li><a href="#contact">Start a conversation ↗</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <p class="copyright">© <span id="y">2026</span> WRIOX. All rights reserved.</p>
+        <p class="footer-tagline">Built for people • Driven by technology</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
