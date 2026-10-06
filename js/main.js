@@ -4,7 +4,7 @@
  */
 
 document.addEventListener("DOMContentLoaded", function () {
-  var EMAIL = "contact@wriox.com";
+  var EMAIL = "wrioxtechnologies@gmail.com";
 
   // 1. Mobile Navigation Toggle & Drawer Controller
   var menuBtn = document.getElementById("menu-toggle") || document.querySelector(".menu-toggle");
