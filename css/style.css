@@ -1714,12 +1714,41 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 44px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .hero-content {
+    display: contents;
+  }
+
+  .eyebrow-badge {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    order: 2;
+    margin-bottom: 20px;
   }
 
   .hero-visual {
+    order: 3;
+    width: 100%;
     max-width: 440px;
+    margin: 8px auto 32px;
+  }
+
+  .hero-lead {
+    order: 4;
+    max-width: 100%;
+    margin-bottom: 28px;
+  }
+
+  .hero-actions {
+    order: 5;
+    margin-bottom: 0;
   }
 
   .section-header-editorial {
