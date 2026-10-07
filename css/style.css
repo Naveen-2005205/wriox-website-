@@ -186,16 +186,6 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
 }
 
-.btn-arrow {
-  font-size: 17px;
-  display: inline-block;
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.btn:hover .btn-arrow {
-  transform: translateX(4px);
-}
-
 /* ==========================================================================
    SITE HEADER & NAVIGATION
    ========================================================================== */
@@ -301,14 +291,6 @@ h1, h2, h3, h4, h5, h6 {
   border-color: var(--b);
   color: var(--b);
   box-shadow: 0 4px 12px rgba(40, 103, 255, 0.12);
-}
-
-.nav-arrow {
-  transition: transform 0.2s ease;
-}
-
-.nav-action-btn:hover .nav-arrow {
-  transform: translateX(3px);
 }
 
 .menu-toggle {
@@ -461,7 +443,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
 }
 
-.logo-floating-stage {
+.logo-floating-stage,
+.logo-static-stage {
   position: relative;
   width: 100%;
   max-width: 480px;
@@ -469,36 +452,9 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  perspective: 1000px;
-  transform-style: preserve-3d;
   z-index: 1;
-  padding: 16px 0 32px;
-  cursor: grab;
-  touch-action: none;
+  padding: 16px 0 28px;
   user-select: none;
-}
-
-.logo-floating-stage:active {
-  cursor: grabbing;
-}
-
-.logo-float-animator {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform-style: preserve-3d;
-  animation: float3d 5.2s ease-in-out infinite;
-  will-change: transform;
-}
-
-.logo-interactive-tilt {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transform-style: preserve-3d;
-  will-change: transform;
 }
 
 .hero-floating-logo-img {
@@ -515,29 +471,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .logo-contact-shadow {
   position: absolute;
-  bottom: 0px;
+  bottom: 6px;
   left: 50%;
   transform: translateX(-50%);
   width: 75%;
   max-width: 340px;
   height: 24px;
-  background: radial-gradient(ellipse 60% 40% at 50% 50%, rgba(11, 16, 32, 0.20) 0%, rgba(40, 103, 255, 0.08) 45%, transparent 75%);
+  background: radial-gradient(ellipse 60% 40% at 50% 50%, rgba(11, 16, 32, 0.18) 0%, rgba(40, 103, 255, 0.06) 45%, transparent 75%);
   filter: blur(10px);
   border-radius: 50%;
   pointer-events: none;
   z-index: 0;
-  animation: shadowBreath 5.2s ease-in-out infinite;
-  will-change: transform, opacity;
-}
-
-@keyframes float3d {
-  0%, 100% { transform: translateY(0px) rotateZ(0deg); }
-  50% { transform: translateY(-14px) rotateZ(1deg); }
-}
-
-@keyframes shadowBreath {
-  0%, 100% { transform: translateX(-50%) scale(1); opacity: 0.75; }
-  50% { transform: translateX(-50%) scale(0.82); opacity: 0.35; }
+  opacity: 0.65;
 }
 
 /* ==========================================================================
@@ -756,7 +701,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .principle-row {
   display: grid;
-  grid-template-columns: 64px 1fr 32px;
+  grid-template-columns: 60px 1fr;
   gap: 28px;
   align-items: center;
   padding: 28px 0;
@@ -787,17 +732,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.6;
   color: var(--mute);
   max-width: 65ch;
-}
-
-.principle-arrow {
-  font-size: 20px;
-  color: var(--mute-light);
-  transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.principle-row:hover .principle-arrow {
-  transform: translateX(4px);
-  color: var(--b);
 }
 
 /* Vision Mission Two-Column Split */
@@ -899,6 +833,16 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 4px;
 }
 
+.service-row:hover .service-web {
+  border-color: rgba(91, 44, 255, 0.45);
+  box-shadow: 0 0 0 3px rgba(91, 44, 255, 0.10), 0 4px 14px rgba(91, 44, 255, 0.14);
+}
+
+.service-row:hover .service-software {
+  border-color: rgba(40, 103, 255, 0.45);
+  box-shadow: 0 0 0 3px rgba(40, 103, 255, 0.10), 0 4px 14px rgba(40, 103, 255, 0.14);
+}
+
 .service-row:hover .service-portfolio {
   border-color: rgba(91, 44, 255, 0.45);
   box-shadow: 0 0 0 3px rgba(91, 44, 255, 0.10), 0 4px 14px rgba(91, 44, 255, 0.14);
@@ -997,26 +941,15 @@ h1, h2, h3, h4, h5, h6 {
 .service-link {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
   font-size: 14.5px;
   font-weight: 600;
   color: var(--ink);
-  transition: color 0.2s ease;
-}
-
-.row-arrow {
-  font-size: 18px;
-  color: var(--mute-light);
-  transition: transform 0.25s ease, color 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .service-row:hover .service-link {
   color: var(--b);
-}
-
-.service-row:hover .row-arrow {
-  transform: translateX(4px);
-  color: var(--b);
+  transform: translateX(2px);
 }
 
 .services-footer-note {
@@ -1194,23 +1127,15 @@ h1, h2, h3, h4, h5, h6 {
   display: inline-flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 6px;
   font-size: 14.5px;
   font-weight: 600;
   color: var(--ink);
-  transition: color 0.2s ease;
-}
-
-.role-arrow {
-  transition: transform 0.2s ease;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
 .role-row:hover .role-apply-link {
   color: var(--b);
-}
-
-.role-row:hover .role-arrow {
-  transform: translateX(4px);
+  transform: translateX(2px);
 }
 
 .career-cta-box {
@@ -1458,22 +1383,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-body);
 }
 
-.channel-arrow {
-  font-size: 17px;
-  font-weight: 500;
-  color: var(--mute-light);
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), color 0.2s ease;
-  margin-left: 2px;
-}
-
 .contact-channel-link:hover {
   color: var(--b);
   transform: translateX(2px);
-}
-
-.contact-channel-link:hover .channel-arrow {
-  transform: translate(3px, -3px);
-  color: var(--b);
 }
 
 .contact-footer-tags {
@@ -1627,16 +1539,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .contact-submit-btn:active {
   transform: translateY(0);
-}
-
-.contact-submit-btn .btn-arrow {
-  display: inline-block;
-  font-size: 17px;
-  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-}
-
-.contact-submit-btn:hover .btn-arrow {
-  transform: translateX(5px);
 }
 
 .msg {
@@ -1846,7 +1748,7 @@ h1, h2, h3, h4, h5, h6 {
     grid-column: 1 / -1;
     flex-direction: row;
     gap: 12px;
-    align-items: baseline;
+    align-items: center;
   }
 
   .role-row {
